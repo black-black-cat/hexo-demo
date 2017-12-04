@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.4.2"
   },
   "scripts": {
     "gen:deploy": "hexo generate -d",
@@ -11,7 +11,8 @@
     "gen": "hexo generate",
     "server": "hexo server",
     "start": "npm run gen & npm run server",
-    "watch": "npm run gen:watch"
+    "watch": "hexo clean && npm run gen:watch",
+    "clean": "hexo clean"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -22,10 +23,10 @@
     "hexo-generator-search": "^1.0.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-marked": "^0.3.0",
+    "hexo-renderer-scss": "^1.1.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "hexo-tag-bootstrap": "^0.0.8",
-    "hexo-toc": "^1.1.0"
+    "hexo-tag-bootstrap": "^0.0.8"
   }
 }

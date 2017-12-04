@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: black-black-cat
+subtitle: 创意源于生活
 description:
-author: John Doe
+author: black-black-cat
 language:
 timezone:
 
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cafe
+theme: even
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -76,7 +76,7 @@ deploy:
 disqus_shortname: black-black-cat
 
 # toc
-toc:
-  maxDepth: 3
-  slugify: transliteration
-  anchor: true
+# toc:
+#   maxDepth: 3
+#   slugify: transliteration
+#   anchor: true
