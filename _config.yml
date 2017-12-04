@@ -74,3 +74,9 @@ deploy:
 
 # disqus
 disqus_shortname: black-black-cat
+
+# toc
+toc:
+  maxDepth: 3
+  slugify: transliteration
+  anchor: true
