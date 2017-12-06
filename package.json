@@ -1,18 +1,19 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "hexo": {
-    "version": "3.4.2"
+    "version": "3.2.2"
   },
   "scripts": {
     "gen:deploy": "hexo generate -d",
     "gen:watch": "hexo generate -w",
     "gen": "hexo generate",
-    "server": "hexo server",
-    "start": "npm run gen & npm run server",
+    "server": "hexo server -p 3301",
+    "start": "run-p gen:watch server",
     "watch": "hexo clean && npm run gen:watch",
-    "clean": "hexo clean"
+    "clean": "hexo clean",
+    "dev": "run-s clean start"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -28,5 +29,8 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-tag-bootstrap": "^0.0.8"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
   }
 }
